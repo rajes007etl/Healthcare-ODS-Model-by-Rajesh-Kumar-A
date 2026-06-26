@@ -49,10 +49,10 @@ It follows the industry‑standard **Bronze → Silver → Gold** data layering 
 
 /databricks
 /COMMON
-/BRONZE
 /SILVER
 /GOLD
-/MASTER
+/JOBS
+/DB SETUP
 
 README.md
 ---
