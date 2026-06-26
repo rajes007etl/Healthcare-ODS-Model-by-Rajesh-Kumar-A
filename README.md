@@ -8,6 +8,8 @@ It follows the industry‑standard **Bronze → Silver → Gold** data layering 
 
 ## 🏗️ Architecture
 
+CSV → Blob → ADF (Bronze) → Databricks (Silver/Gold) → BI
+
 ### Bronze Layer (Raw Ingestion)
 - Implemented using **Azure Data Factory (ADF)** pipelines.
 - **Landing CSV files** from source systems (Claims, Members, Providers, Payments) are stored in **Azure Blob Storage**.
