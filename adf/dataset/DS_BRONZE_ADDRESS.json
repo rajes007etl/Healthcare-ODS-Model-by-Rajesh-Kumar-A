@@ -1,0 +1,58 @@
+{
+	"name": "DS_BRONZE_ADDRESS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ADDRESS_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "MEMBER_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "ADDRESS_LINE1",
+				"type": "varchar"
+			},
+			{
+				"name": "ADDRESS_LINE2",
+				"type": "varchar"
+			},
+			{
+				"name": "CITY",
+				"type": "varchar"
+			},
+			{
+				"name": "STATE",
+				"type": "varchar"
+			},
+			{
+				"name": "ZIP_CODE",
+				"type": "varchar"
+			},
+			{
+				"name": "COUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "EFFECTIVE_DATE",
+				"type": "date"
+			},
+			{
+				"name": "END_DATE",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "ADDRESS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

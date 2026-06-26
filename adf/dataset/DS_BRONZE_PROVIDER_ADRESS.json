@@ -1,0 +1,17 @@
+{
+	"name": "DS_BRONZE_PROVIDER_ADRESS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "PROVIDER_ADDRESS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

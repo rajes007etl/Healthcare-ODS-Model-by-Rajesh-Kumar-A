@@ -1,0 +1,58 @@
+{
+	"name": "DS_BRONZE_MEMBER",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "MEMBER_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "FIRST_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LAST_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "DOB",
+				"type": "date"
+			},
+			{
+				"name": "GENDER",
+				"type": "varchar"
+			},
+			{
+				"name": "PLAN_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "EMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "PHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "EFFECTIVE_DATE",
+				"type": "date"
+			},
+			{
+				"name": "END_DATE",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "MEMBER"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

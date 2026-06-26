@@ -1,0 +1,46 @@
+{
+	"name": "DS_PROVIDER_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "PROVIDER_20260621.CSV",
+				"folderPath": "provider",
+				"container": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PROVIDER_ID",
+				"type": "String"
+			},
+			{
+				"name": "PROVIDER_NAME",
+				"type": "String"
+			},
+			{
+				"name": "SPECIALITY",
+				"type": "String"
+			},
+			{
+				"name": "LOCATION",
+				"type": "String"
+			},
+			{
+				"name": "STATUS",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

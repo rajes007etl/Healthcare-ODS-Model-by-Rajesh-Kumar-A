@@ -1,0 +1,48 @@
+{
+	"name": "DS_BRONZE_CLAIM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CLAIM_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "MEMBER_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "PROVIDER_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "CLAIM_DATE",
+				"type": "date"
+			},
+			{
+				"name": "CLAIM_TYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "CLAIM_AMOUNT",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "CLAIM_STATUS",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "CLAIM"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

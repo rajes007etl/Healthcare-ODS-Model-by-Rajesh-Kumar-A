@@ -1,0 +1,15 @@
+{
+	"name": "rkods",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2cd3e075-9c24-42e4-b2b7-aaf1cdf8ecde",
+		"tenantId": "83d44060-7404-4d35-bd43-76a9d5776b9a"
+	}
+}

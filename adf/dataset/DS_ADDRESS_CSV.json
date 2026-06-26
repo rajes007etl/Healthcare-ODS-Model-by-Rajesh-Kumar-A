@@ -1,0 +1,66 @@
+{
+	"name": "DS_ADDRESS_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ADDRESS_20260621.CSV",
+				"folderPath": "address",
+				"container": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ADDRESS_ID",
+				"type": "String"
+			},
+			{
+				"name": "MEMBER_ID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESS_LINE1",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESS_LINE2",
+				"type": "String"
+			},
+			{
+				"name": "CITY",
+				"type": "String"
+			},
+			{
+				"name": "STATE",
+				"type": "String"
+			},
+			{
+				"name": "ZIP_CODE",
+				"type": "String"
+			},
+			{
+				"name": "COUNTRY",
+				"type": "String"
+			},
+			{
+				"name": "EFFECTIVE_DATE",
+				"type": "String"
+			},
+			{
+				"name": "END_DATE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

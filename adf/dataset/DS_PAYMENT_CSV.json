@@ -1,0 +1,46 @@
+{
+	"name": "DS_PAYMENT_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "PAYMENT_20260621.CSV",
+				"folderPath": "payment",
+				"container": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PAYMENT_ID",
+				"type": "String"
+			},
+			{
+				"name": "CLAIM_ID",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENT_DATE",
+				"type": "String"
+			},
+			{
+				"name": "PAID_AMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENT_METHOD",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

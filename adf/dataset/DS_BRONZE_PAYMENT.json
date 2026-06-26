@@ -1,0 +1,40 @@
+{
+	"name": "DS_BRONZE_PAYMENT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "PAYMENT_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "CLAIM_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "PAYMENT_DATE",
+				"type": "date"
+			},
+			{
+				"name": "PAID_AMOUNT",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "PAYMENT_METHOD",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "PAYMENT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

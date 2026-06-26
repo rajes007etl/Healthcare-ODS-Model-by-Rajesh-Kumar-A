@@ -1,0 +1,62 @@
+{
+	"name": "DS_PROVIDER_ADDRESS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "PROVIDER_ADDRESS_20260621.CSV",
+				"folderPath": "provider_address",
+				"container": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PROVIDER_ADDRESS_ID",
+				"type": "String"
+			},
+			{
+				"name": "PROVIDER_ID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESS_LINE1",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESS_LINE2",
+				"type": "String"
+			},
+			{
+				"name": "CITY",
+				"type": "String"
+			},
+			{
+				"name": "STATE",
+				"type": "String"
+			},
+			{
+				"name": "ZIP_CODE",
+				"type": "String"
+			},
+			{
+				"name": "COUNTRY",
+				"type": "String"
+			},
+			{
+				"name": "SRC_CREATED_DATETIME",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
